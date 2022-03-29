@@ -204,4 +204,14 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Button"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        tools:text="Reset" />
+
 </LinearLayout>
