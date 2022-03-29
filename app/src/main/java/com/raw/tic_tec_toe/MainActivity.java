@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     int op = 0;
 
     Button reset;
-    TextView t11, t12, t13, t21, t22, t23, t31, t32, t33;
+    TextView t11, t12, t13, t21, t22, t23, t31, t32, t33,first;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,14 @@ public class MainActivity extends AppCompatActivity {
         t31 = findViewById(R.id.t31);
         t32 = findViewById(R.id.t32);
         t33 = findViewById(R.id.t33);
+
+        first = findViewById(R.id.first);
+
+            if (op == 0) {
+                first.setText("First : O");
+            }else{
+                first.setText("First : X");
+            }
 
         t11.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -204,6 +212,12 @@ public class MainActivity extends AppCompatActivity {
                 t31.setText("");
                 t32.setText("");
                 t33.setText("");
+
+                if (op == 0) {
+                    first.setText("First : O");
+                }else{
+                    first.setText("First : X");
+                }
             }
         });
     }
